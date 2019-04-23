@@ -17,3 +17,16 @@ with open('1.txt','wt',encoding='utf-8') as fw:
 #以追加模式打开文件
 with open('1.txt','at',encoding='utf-8') as fa:
     fa.write('\napend some text')
+
+
+'''------读写二进制文件-------'''
+with open('iperf','rb') as frb:
+    data = frb.read(16)
+    text = data.decode('utf-8')
+    print(text)
+with open('iperf','wb') as fwb:
+    sometext = 'hello world'
+    fwb.write(sometext.encode('utf-8'))
+
+
+'''---------------------'''
