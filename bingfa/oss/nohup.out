@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "thread_util.py", line 46, in <module>
+    k.join()
+  File "thread_util.py", line 26, in join
+    self._thread.join(timeout)
+  File "/usr/local/python3/lib/python3.6/threading.py", line 1056, in join
+    self._wait_for_tstate_lock()
+  File "/usr/local/python3/lib/python3.6/threading.py", line 1072, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
